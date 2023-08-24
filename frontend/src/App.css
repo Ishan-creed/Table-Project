@@ -1,0 +1,73 @@
+:root {
+  --h1FontSize: 1.5rem;
+  --BaseColor: #eeecec;
+  --popupColor: #0e1329;
+  --bgColor: #ffffff;
+  --btnColor: #1f7de1;
+  --highlightedColor: #000;
+  --textColor: #000;
+  --hover: #456cee;
+  --success: #4fd18b;
+  --fail: #c73d3d;
+  --active: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--BaseColor);
+
+  display: flex;
+}
+.container {
+  display: flex;
+  color: var(--textColor);
+  overflow: hidden;
+  position: relative;
+  font-family: "Poppins";
+  background-color: var(--BaseColor);
+  width: 100%; /* Add this */
+  height: 100%; /* Add this */
+}
+.scrolli {
+  flex: 1; /* Add this */
+  padding: 1rem 2rem;
+}
+.Dasboard {
+  margin-left: 20vw;
+  background-color: var(--BaseColor);
+  width: 80vw;
+  height: 100%; /* Add this */
+}
+
+.sideBar {
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  height: 100vh;
+
+  background-color: var(--bgColor);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .Pie {
+    margin-left: 8%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .Pie {
+    margin-left: 8vw;
+  }
+}
