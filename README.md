@@ -34,3 +34,25 @@ The User Management System is a web application that allows users to manage user
    ```bash
    git clone https://github.com/Ishan-creed/Table-Project
    cd frontend
+   npm install
+   npm start
+
+2. Backend
+   cd backend
+   npm install
+   nodemon app.js
+
+3. Usage
+Access the application at http://localhost:3000.
+View the list of users in a table format.
+Use the "Update" button to modify user information.
+Use the "Delete" button to remove users.
+Use the "Email" button to send emails to users.
+API Endpoints
+GET /getUser: Get a list of all users.
+POST /addUser: Add a new user.
+PUT /updateUser Update user information by ID.
+DELETE /deleteUser Delete a user by ID.
+POST /mail: Send an email to a user.
+   
+   
